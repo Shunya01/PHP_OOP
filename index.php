@@ -25,7 +25,7 @@
         <section>
             <form class="form-row" action="create.php" method="POST">
                 <div class="col-12 col-md-9 py-2">
-                    <input type="text" class="form-control" placeholder="ADD TODO">
+                    <input type="text" class="form-control" placeholder="ADD TODO" name="task">
                 </div>
                 <div class="py-2 col-md-3 col-12">
                     <button type="submit" class="col-12 btn btn-primary btn-block">ADD</button>
@@ -39,8 +39,8 @@
                     <tr class="bg-primary text-light">
                         <th class=>TODO</th>
                         <th>DUE DATE</th>
-                        <th></th>
-                        <th></th>
+                        <th>編集</th>
+                        <th>削除</th>
                     </tr>
                 </thead>
                 <tbody>
