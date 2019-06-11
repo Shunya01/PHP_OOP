@@ -14,7 +14,7 @@ class Todo
 
     public function all(){
         $stmt = $this->db_manager->dbh->
-        prepare('SELECT * FROM ' . $this->table. 'ORDER BY id DESC' );
+        prepare('SELECT * FROM ' . $this->table);
         $stmt->execute();
         $tasks = $stmt->fetchAll();
 
