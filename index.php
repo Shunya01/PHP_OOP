@@ -56,7 +56,7 @@
                     </tr>
                     <tr>
                         <td>go to club</td>
-                        <td>2019/10/21</td>
+                        
                         <td>
                             <a class="text-success" href="edit.php">EDIT</a>
                         </td>
