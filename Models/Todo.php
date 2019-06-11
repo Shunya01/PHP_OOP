@@ -27,7 +27,7 @@ class Todo
     {
         $stmt = $this->db_manager->dbh->prepare('SELECT * FROM ' . $this->table . ' ORDER BY id desc');
         $stmt->execute();
-        $tasks = $stmt->fetchAll(); 
+        $tasks = $stmt->fetchAll();
 
         return $tasks;
     }
@@ -36,9 +36,9 @@ class Todo
     {
         $stmt = $this->db_manager->dbh->prepare('SELECT * FROM ' . $this->table . ' WHERE id = ?');
         $stmt->execute([$id]);
-        $task = $stmt->fetch(); 
+        $task = $stmt->fetch();
 
-        return $task;     
+        return $task;
     }
 
     public function update($name, $id)
