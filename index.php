@@ -58,7 +58,7 @@ $tasks = $todo->all();
                     <?php foreach ($tasks as $task): ?>
                     <tr>
                         <td><?php echo h($task['name']) ?></td>
-                        <td>2019/08/21</td>
+                        <td><?php echo date('y年m月d日' , strtotime(h($task['due_date'])))?></td>
                         <td>
                             <a class="text-success" href="edit.php?id=<?php echo h($task['id']) ?>">EDIT</a>
                         </td>
