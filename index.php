@@ -60,7 +60,7 @@ $tasks = $todo->all();
                         <td><?php echo h($task['name']) ?></td>
                         <td>2019/08/21</td>
                         <td>
-                            <a class="text-success" href="edit.php">EDIT</a>
+                            <a class="text-success" href="edit.php?id=<?php echo h($task['id']) ?>">EDIT</a>
                         </td>
                         <td>
                             <a class="text-danger" href="delete.php">DELETE</a>
